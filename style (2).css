@@ -1,0 +1,151 @@
+<section class="hero">
+  <h1>Hello, I’m a Frontend Developer</h1>
+  <p>Creative solutions for modern problems</p>
+  <a href="#contact">Contact Me</a>
+</section>
+
+<section class="Projects">
+  <h2>Projects</h2>
+  <div class="project-box">
+    <div class="pro">
+      <h4>Project One</h4>
+      <p>Short description</p>
+    </div>
+    <!-- Add more .pro -->
+  </div>
+</section>
+
+<section class="techno">
+  <h2>Technologies</h2>
+  <div class="techbox">
+    <div class="te">
+      <img src="html.png" alt="HTML" />
+    </div>
+    <!-- Add more .te -->
+  </div>
+</section>
+
+<section class="Contact" id="contact">
+  <h2>Contact Me</h2>
+  <form class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea rows="4" name="message" placeholder="Your Message" required></textarea>
+    <input type="submit" value="Send Message" />
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Your Name. All rights reserved.</p>
+</footer>
+
+
+/* Base Styles (already included before) */
+/* ... তোমার আগের সব CSS ঠিকই থাকবে ... */
+
+/* Small Devices (phones, 0–575px) */
+@media screen and (max-width: 575px) {
+  .hero h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .project-box,
+  .techbox {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .pro,
+  .te {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 0.9rem;
+  }
+}
+
+/* Medium Devices (tablets, 576–991px) */
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  .hero h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .project-box,
+  .techbox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pro,
+  .te {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+/* Large Devices (laptops/desktops, 992–1199px) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .hero h1 {
+    font-size: 2.6rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .pro,
+  .te {
+    width: 40%;
+  }
+
+  .contact-form {
+    width: 80%;
+  }
+}
+
+/* Extra Large Devices (large desktops, 1200px+) */
+@media screen and (min-width: 1200px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.3rem;
+  }
+
+  .pro,
+  .te {
+    width: 30%;
+  }
+
+  .contact-form {
+    width: 60%;
+  }
+}
